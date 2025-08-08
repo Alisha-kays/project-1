@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming-My hobby🎮</title>
+</head>
+<body>
+    <style>
+
+       body {
+        background: linear-gradient(106.5deg, rgba(255, 215, 185, 0.91) 23%, rgba(223, 159, 247, 0.8) 93%);
+       }
+       h1 {
+        text-align: center;
+       }
+         h2 {
+          text-align: center;
+         }
+         .container {
+            background-color: #f0f0f0;
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            max-width: 650px;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 0 auto;
+             }
+             button {
+                background-color: #9b3ca3; 
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+                transition: all 0.3s ease;
+             }
+             button:hover {
+                background-color: #520538; 
+                transform: scale(1.05);
+             }
+             footer {
+                text-align: center;
+                margin: 10px 0;
+             }
+             p {
+                font-size: 16px;
+                line-height: 1.5;
+               text-align: center;
+             }
+             .grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr ;
+                gap: 5px;
+                margin: 15px 0;
+             }
+             .grid img {
+                width: 100%;
+                  border-radius: 10px;
+                  transition: all 0.3s ease;
+             }
+               .grid img:hover {
+                     transform: scale(2);
+               }
+               .grid-1 {
+                  display: grid;
+                  grid-template-columns: 1fr;
+                  gap: 5px;
+                  margin: 15px 0;
+               }
+               .grid-1 img {
+                  filter: contrast(1.2);
+                  width: 100%;
+                  border-radius: 10px;
+                  transition: all 0.3s ease;
+               }
+               .grid-1 img:hover {
+                  transform: scale(1.05);
+               }
+               .dark {
+                  background: linear-gradient(112.5deg, rgb(95, 10, 135) 11.4%, rgb(164, 80, 139) 60.2%);
+                  color: white;
+               }
+               .dark a {
+                  color: white;
+               }
+               .dark .container {
+                  background : linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));;
+                  color: white;
+               }
+    </style>
+
+    <div class="container">
+    <h1>Gaming</h1>
+    <h2>My favorite hobby🎮.</h2>
+
+    <span class="grid-1">
+    <a href="https://en.wikipedia.org/wiki/Gaming" target="_blank">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/171/793/original/cool-anime-girl-gamer-logo-x20eplm7fhbnap0s.jpg?1754502035" alt="" width="300">
+    </a>
+    </span>
+    <span class="grid">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/171/790/original/SEOon_How_to_Create_the_Best_Gaming_Setup_e78e19bf-25c2-42aa-b210-349a89080cb7.jpg?1754501573" alt="" width="300">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/171/788/original/games.jpg?1754501525" alt="" width="300">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/171/789/original/FNECO_36-10_ForbiddenFruit_EGS_Launcher_KeyArt_Blade_1200x1600_1200x1600-9eb41f23a725f28a00996272bf654e8e.jpeg?1754501557" alt="" width="300">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/171/792/original/3915179-wattsonthumb.jpeg?1754501949" alt="" width="300">
+    </span>
+
+    <p>Gaming is a great way to relax and have fun. I love playing different types of games, from action-packed adventures to strategic puzzles.</p>
+    <p>Gaming is my favorite hobby because it lets me escape into exciting worlds, challenge my skills, and connect with people from all over the world. Whether I'm playing action-packed shooters, strategic simulations, or immersive story-driven adventures, I always find something new and fun. It's not just entertainment—it's a way to relax, learn, and even improve my problem-solving abilities.</p>
+    <button>Learn Gaming</button>
+    <button class="theme-button">Change Theme</button>
+    </div>
+    <footer>Coded with 💜 by 
+     <a href="www.youtube.com/Alisha7-Gaming" target="_blank" >Alisha</a>   
+    </footer>
+
+    <script>
+      function changeTheme() {
+        
+      let body = document.querySelector('body');
+      if (body.classList.contains('dark')) {
+        body.classList.remove('dark');
+      } else {
+        body.classList.add('dark');
+      }
+      }
+      // body.classList.add('dark'); // Optional: Remove or comment out this line if not needed
+
+      let themeButton = document.querySelector('.theme-button');
+      themeButton.addEventListener('click', changeTheme);
+    </script>
+
+
+</body>
+</html>
